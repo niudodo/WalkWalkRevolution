@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Walk Walk Revolution</string>
+    <string name="defaultValue">Select One</string>
+    <string name="feedbacktype1">Loop</string>
+    <string name="feedbacktype2">Out-and-back</string>
+    <string name="feedbacktype3">Flat</string>
+    <string name="feedbacktype4">Hilly</string>
+    <string name="feedbacktype5">Streets</string>
+    <string name="feedbacktype6">Trail</string>
+    <string name="feedbacktype7">Flat Surface</string>
+    <string name="feedbacktype8">Even Surface</string>
+    <string name="feedbacktype9">Moderate</string>
+    <string name="feedbacktype10">Easy</string>
+    <string name="feedbacktype11">Difficult</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_activity_mock_step_home_page">MockStepHomePage</string>
+    <string name="title_activity_mock_steps_home_page">MockStepsHomePage</string>
+    <string name="title_activity_mock_steps_walk_screen">MockStepsWalkScreen</string>
+</resources>

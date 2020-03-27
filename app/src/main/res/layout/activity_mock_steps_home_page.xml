@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MockClass.MockStepsHomePage">
+
+
+    <Button
+        android:id="@+id/addsteps"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:text="+500 Steps"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:text="Go Back"
+        app:layout_constraintTop_toBottomOf="@+id/addsteps"
+        tools:layout_editor_absoluteX="-16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

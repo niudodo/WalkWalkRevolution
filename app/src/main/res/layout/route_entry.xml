@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/route_entry_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/route_entry_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/routeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="0dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="2"
+            android:text="Sample RouteName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#6A6A6A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/route_entry_favorite"
+                android:button="@drawable/favorite_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="like"
+                android:textColor="#6A6A6A"/>
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="Edit"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/repeat"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="Repeat"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/details"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:text="Details"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dist"
+            android:text="Sample dist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#6A6A6A"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/steps"
+            android:text="Sample step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#6A6A6A"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/time"
+            android:text = "sample time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#6A6A6A"
+            android:typeface="sans" />
+    </LinearLayout>
+</LinearLayout>

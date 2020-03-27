@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "122320953387",
+    "firebase_url": "https://team-project-team-22.firebaseio.com",
+    "project_id": "team-project-team-22",
+    "storage_bucket": "team-project-team-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122320953387:android:69b326e1018b6c954b4a6e",
+        "android_client_info": {
+          "package_name": "edu.ucsd.cse110.team22.walkwalkrevolution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122320953387-i71230jurtq6r5u6e72ue2ro59go5pof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsd.cse110.team22.walkwalkrevolution",
+            "certificate_hash": "1d06012b9ee462eee88e904e1e51c52c4d8e99af"
+          }
+        },
+        {
+          "client_id": "122320953387-ip5m1ooae06vak7bu6oe17dpmrqsbltn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDJOrQiwLywJ2JCdGxsqlKJ0nFKE8dJFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122320953387-ip5m1ooae06vak7bu6oe17dpmrqsbltn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

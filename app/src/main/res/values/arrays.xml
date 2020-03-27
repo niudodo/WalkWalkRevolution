@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback1_list">
+        <item>@string/defaultValue</item>
+        <item>@string/feedbacktype1</item>
+        <item>@string/feedbacktype2</item>
+    </string-array>
+
+    <string-array name="feedback2_list">
+        <item>@string/defaultValue</item>
+        <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+    </string-array>
+
+    <string-array name="feedback3_list">
+        <item>@string/defaultValue</item>
+        <item>@string/feedbacktype5</item>
+        <item>@string/feedbacktype6</item>
+    </string-array>
+
+    <string-array name="feedback4_list">
+        <item>@string/defaultValue</item>
+        <item>@string/feedbacktype7</item>
+        <item>@string/feedbacktype8</item>
+    </string-array>
+
+    <string-array name="feedback5_list">
+        <item>@string/defaultValue</item>
+        <item>@string/feedbacktype9</item>
+        <item>@string/feedbacktype10</item>
+        <item>@string/feedbacktype11</item>
+
+    </string-array>
+</resources>
