@@ -37,9 +37,9 @@ public class RepeatStepUITest {
 
     @Test
     public void repeatStepUITest() {
-        ViewInteraction floatingActionButton = onView(
+        ViewInteraction imageButton = onView(
                 allOf(withId(R.id.toSaveScreen)));
-        floatingActionButton.perform(scrollTo(), click());
+        imageButton.perform(scrollTo(), click());
 
         ViewInteraction appCompatEditText = onView(
                 allOf(withId(R.id.routeName)));

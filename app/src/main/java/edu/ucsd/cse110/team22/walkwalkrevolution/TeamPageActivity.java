@@ -163,9 +163,8 @@ public class TeamPageActivity extends AppCompatActivity implements UserObserver 
     protected void setUpFirebase() {
         FirebaseApp.initializeApp(this);
         invitationToMe = getStorageStore();
-        String document = getMyUser().getName().replace(' ', '0');
 
-        invitationToMe.setUp(COLLECTION_KEY, document, MESSAGES_KEY, this);
+        invitationToMe.setUp(COLLECTION_KEY, User.myUser.getUid(), MESSAGES_KEY, this);
         invitationToMe.subscribeToNotificationsTopic();
         /*MOCK CODE, use to test if notification can be successfully sent*/
         Map<String, String> newMessage = new HashMap<>();
@@ -214,7 +213,7 @@ public class TeamPageActivity extends AppCompatActivity implements UserObserver 
         User tempUser;
         if(User.myUser != null){
             tempUser = User.myUser;
-            buildRemoteTeam(tempUser.getName(),tempUser);
+            buildRemoteTeam(User.myUser.getUid(),tempUser);
         }else {
             tempUser = new User("Mock User", "mock@gmail.com");
         }

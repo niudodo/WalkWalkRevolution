@@ -199,6 +199,4 @@ public class FirebaseStoreAdapter implements StorageStore {
         StorageHandler sh = StorageHandler.getStorage(activity);
         sh.saveItem(r.id, r);
     }
-
-
 }

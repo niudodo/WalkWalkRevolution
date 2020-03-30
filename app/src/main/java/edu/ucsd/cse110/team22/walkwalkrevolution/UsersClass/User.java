@@ -20,6 +20,7 @@ public class User {
     private String name;
     private String email;
     private String initial;
+    private String uid;
     private int iconColor;
     private Team team; // Team keep list of members and invited pending members
     private ArrayList<Invitation> invited; //the pending invitation I RECIEVED
@@ -255,6 +256,14 @@ public class User {
      */
     public ArrayList<UserObserver> getObservers(){
         return this.observers;
+    }
+
+    public String getUid(){
+        return this.uid;
+    }
+
+    public void setUid(String uid){
+        this.uid = uid;
     }
 
     /*----------------------------------------Routes----------------------------------------------*/

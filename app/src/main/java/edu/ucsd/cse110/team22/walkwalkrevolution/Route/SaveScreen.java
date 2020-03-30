@@ -168,7 +168,9 @@ public class SaveScreen extends AppCompatActivity {
 
     public void remoteAddRoute(Route route){
         StorageStore store = new FirebaseStoreAdapter();
-        store.setUp("users", (User.myUser.getName()).replace(' ','0'), "routes", this);
+        String document = User.myUser.getUid();
+        String uid = (StorageHandler.getStorage(this)).retrieveItem("uid",String.class);
+        store.setUp("users", User.myUser.getUid(), "routes", this);
         store.initRouteListener(User.myUser);
         store.sendNotification(Route.getDataMap(route));
     }

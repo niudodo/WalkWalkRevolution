@@ -243,8 +243,9 @@ public class HomePageActivity extends StepViewActivity {
         StorageHandler storageHandler = StorageHandler.getStorage(this);
         String name = storageHandler.retrieveItem("name", String.class);
         String email = storageHandler.retrieveItem("email", String.class);
-
+        String uid = storageHandler.retrieveItem("uid", String.class);
         User me = new User(name, email);
+        me.setUid(uid);
         myUser = me;
     }
 
@@ -254,7 +255,7 @@ public class HomePageActivity extends StepViewActivity {
      */
     public void initializeInvitationStore(){
         StorageStore msgStore = new FirebaseStoreAdapter();
-        msgStore.setUp("users", (User.myUser.getName()).replace(' ','0'), "invitation", this);
+        msgStore.setUp("users", User.myUser.getUid(),"invitation", this);
         msgStore.subscribeToNotificationsTopic();
         msgStore.initInvitationListener(myUser);
     }
@@ -264,7 +265,7 @@ public class HomePageActivity extends StepViewActivity {
      */
     public void initializedRouteStore(){
         StorageStore routeStore = new FirebaseStoreAdapter();
-        routeStore.setUp("users", (User.myUser.getName()).replace(' ','0'), "routes", this);
+        routeStore.setUp("users", myUser.getUid(), "routes", this);
         routeStore.subscribeToNotificationsTopic();
         routeStore.initRouteListener(myUser);
     }

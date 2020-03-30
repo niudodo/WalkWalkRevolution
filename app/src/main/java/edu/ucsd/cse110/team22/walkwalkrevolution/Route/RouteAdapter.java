@@ -116,7 +116,7 @@ public class RouteAdapter extends ArrayAdapter<Route> {
                 r.favorite = buttonView.isChecked();
 
                 StorageStore ss = new FirebaseStoreAdapter();
-                ss.setUp("users", (User.myUser.getName()).replace(' ', '0'), "routes", (Activity)c);
+                ss.setUp("users", User.myUser.getUid(), "routes", (Activity)c);
                 ss.updateRoute(r);
 
                 StorageHandler s = StorageHandler.getStorage(c);

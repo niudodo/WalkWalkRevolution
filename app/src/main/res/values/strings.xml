@@ -16,4 +16,17 @@
     <string name="title_activity_mock_step_home_page">MockStepHomePage</string>
     <string name="title_activity_mock_steps_home_page">MockStepsHomePage</string>
     <string name="title_activity_mock_steps_walk_screen">MockStepsWalkScreen</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_hint_text">New User? \nCreate Account</string>
+    <string name="login_hint_text">Already have\naccount? Login</string>
+    <string name="login_btn_text">Login</string>
+    <string name="sign_in_btn_text">Sign in</string>
 </resources>

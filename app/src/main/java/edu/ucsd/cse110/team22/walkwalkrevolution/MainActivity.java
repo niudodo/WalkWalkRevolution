@@ -16,6 +16,7 @@ import edu.ucsd.cse110.team22.walkwalkrevolution.fitness.FitnessService;
 import edu.ucsd.cse110.team22.walkwalkrevolution.fitness.FitnessServiceFactory;
 import edu.ucsd.cse110.team22.walkwalkrevolution.fitness.GoogleFitAdapter;
 import edu.ucsd.cse110.team22.walkwalkrevolution.fitness.StepViewActivity;
+import edu.ucsd.cse110.team22.walkwalkrevolution.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
   
@@ -52,8 +53,10 @@ public class MainActivity extends AppCompatActivity {
         if(hasHeight){
             launchHomePage();
         }else{
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
             askForHeight();
-            askForNameEmail();
+            //askForNameEmail();
         }
     }
 
@@ -81,11 +84,6 @@ public class MainActivity extends AppCompatActivity {
         });
         AlertDialog showBuilder = builder.create();
         showBuilder.show();
-    }
-
-    private void storeHeight(){
-        StorageHandler storageHandler = StorageHandler.getStorage(this);
-        storageHandler.saveItem("height", height);
     }
 
     /**Edited ask for email and name for initializing user object later on*/
@@ -133,12 +131,15 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog showBuilder = builder.create();
         showBuilder.show();
     }
-
     private void storeNameEmail(String name, String email){
         StorageHandler storageHandler = StorageHandler.getStorage(this);
         storageHandler.saveItem("name", name);
         storageHandler.saveItem("email", email);
     }
 
+    private void storeHeight(){
+        StorageHandler storageHandler = StorageHandler.getStorage(this);
+        storageHandler.saveItem("height", height);
+    }
 }
 

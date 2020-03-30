@@ -12,43 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Message.MessageActivity"></activity>
-
-        <service
-            android:name=".UsersClass.FireBaseInvitationNotifService"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <activity android:name=".TeamPageActivity" />
         <activity
-            android:name=".MockClass.MockStepsWalkScreen"
-            android:label="@string/title_activity_mock_steps_walk_screen"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MockClass.MockStepsHomePage"
-            android:label="@string/title_activity_mock_steps_home_page"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <service
-            android:name=".timer.TimerService"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name=".Route.RepeatRouteActivity" />
-
-        <service
-            android:name=".fitness.UpdateStepService"
-            android:enabled="true"
-            android:exported="true" />
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity>
+        <activity android:name=".Message.MessageActivity" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -64,8 +36,37 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Route.RouteActivity" />
         <activity android:name=".Route.EditScreen" />
+        <activity android:name=".TeamPageActivity" />
+        <activity android:name=".Route.RepeatRouteActivity" />
+
+        <service
+            android:name=".timer.TimerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".fitness.UpdateStepService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".UsersClass.FireBaseInvitationNotifService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--***********************************mock class*************************************-->
         <activity android:name=".MockedClass.MockHomeActivity" />
         <activity android:name=".MockTeamActivity" />
+        <activity
+            android:name=".MockClass.MockStepsWalkScreen"
+            android:label="@string/title_activity_mock_steps_walk_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MockClass.MockStepsHomePage"
+            android:label="@string/title_activity_mock_steps_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

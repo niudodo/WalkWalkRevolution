@@ -18,7 +18,6 @@ import edu.ucsd.cse110.team22.walkwalkrevolution.GoogleMap.GoogleMapAdapter;
 import edu.ucsd.cse110.team22.walkwalkrevolution.GoogleMap.MapAdapter;
 import edu.ucsd.cse110.team22.walkwalkrevolution.R;
 import edu.ucsd.cse110.team22.walkwalkrevolution.Storage.StorageHandler;
-import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.User;
 
 
 public class RouteActivity extends AppCompatActivity {
@@ -35,14 +34,19 @@ public class RouteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route_page);
 
-
         //generate mocked routes
         mockTeamRoutes();
 
         StorageHandler s = StorageHandler.getStorage(this);
         String keyList[] = s.getAllKeys();
 
-        routeList = User.myUser.getMyRoutes();
+        routeList = new ArrayList<>();
+        Route route1 = new Route("Jennie Zhang", "Downtown SD", "00:27:54",
+                "USS Midway", "great city", false, "flat",
+                "Out-and-Back", "streets", "Flat Surface", "Easy",
+                "4600", "7");
+        routeList.add(route1);
+        
         teamRouteList = new ArrayList<>();
         Route testRoute1 = new Route("Alice Brown", "Downtown SD", "00:27:54",
                 "USS Midway", "great city", false, "flat",
