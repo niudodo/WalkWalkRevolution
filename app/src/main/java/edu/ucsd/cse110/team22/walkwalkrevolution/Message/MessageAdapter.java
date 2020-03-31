@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import edu.ucsd.cse110.team22.walkwalkrevolution.R;
-import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.Invitation;
 import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.User;
 
 public class MessageAdapter extends ArrayAdapter<IMessage> {

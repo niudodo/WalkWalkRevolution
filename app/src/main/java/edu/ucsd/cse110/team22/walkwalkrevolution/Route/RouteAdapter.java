@@ -131,6 +131,10 @@ public class RouteAdapter extends ArrayAdapter<Route> {
 
 
     private void addInitialIcon(String name, LinearLayout ll){
+        TextView padding = new TextView((Activity)c);
+        padding.setWidth(convertDpToPx(c, 4));
+        padding.setHeight(convertDpToPx(c, 30));
+        ll.addView(padding, 0);
         TextView initialIcon = new TextView((Activity)c);
         Drawable unwrappedDrawable = ContextCompat.getDrawable(c, R.drawable.round_button);
         Drawable wrappedDrawable = DrawableCompat.wrap(unwrappedDrawable);

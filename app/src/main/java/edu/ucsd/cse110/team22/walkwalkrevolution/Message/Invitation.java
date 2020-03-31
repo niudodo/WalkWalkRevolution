@@ -1,6 +1,7 @@
-package edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass;
+package edu.ucsd.cse110.team22.walkwalkrevolution.Message;
 
-import edu.ucsd.cse110.team22.walkwalkrevolution.Message.IMessage;
+import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.Team;
+import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.User;
 
 /**
  * Invitation class is a class that use for one user to invite another user into her team
@@ -14,6 +15,7 @@ public class Invitation implements IMessage{
     private User invitee;
     private boolean pending; //true if invitee hasn't response
     private boolean accepted; //true if invitee accept
+    private String time; //TODO need to be implement
 
     /**
      * Constructor

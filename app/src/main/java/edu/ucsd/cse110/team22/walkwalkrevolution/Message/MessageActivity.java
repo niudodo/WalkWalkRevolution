@@ -10,7 +10,6 @@ import java.util.List;
 
 import edu.ucsd.cse110.team22.walkwalkrevolution.R;
 import edu.ucsd.cse110.team22.walkwalkrevolution.Storage.StorageStore;
-import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.Invitation;
 import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.User;
 import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.UserObserver;
 

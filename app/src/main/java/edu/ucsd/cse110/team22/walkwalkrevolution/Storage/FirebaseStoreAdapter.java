@@ -16,7 +16,7 @@ import java.util.Map;
 
 import edu.ucsd.cse110.team22.walkwalkrevolution.Message.IMessage;
 import edu.ucsd.cse110.team22.walkwalkrevolution.Route.Route;
-import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.Invitation;
+import edu.ucsd.cse110.team22.walkwalkrevolution.Message.Invitation;
 import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.Team;
 import edu.ucsd.cse110.team22.walkwalkrevolution.UsersClass.User;
 

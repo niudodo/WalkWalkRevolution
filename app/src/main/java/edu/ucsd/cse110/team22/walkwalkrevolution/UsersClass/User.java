@@ -6,6 +6,7 @@ import android.graphics.Color;
 import java.util.ArrayList;
 import java.util.Random;
 
+import edu.ucsd.cse110.team22.walkwalkrevolution.Message.Invitation;
 import edu.ucsd.cse110.team22.walkwalkrevolution.Route.Route;
 
 /**
